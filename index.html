@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Registration Form</title>
+    <style>
+        body{
+            color: rgb(10, 1, 1);
+            background-color: lightblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body >
+    <center>
+    <h1>Student Registration form</h1>
+    <p>Fill out the form for registration</p><hr>
+</center>
+    <form action="/submit_form.php" method="post">
+
+        <label for="Name">Name:</label><br>
+        <input type="text" id="first Name" name="First name" placeholder="First Name" style=" width:48%; height: 20px; padding: 2px">
+        <input type="text" id="Last Name" name="Last Name"placeholder="Last Name" style=" width:48%; height: 20px; padding: 2px"><br>
+        <label for="Birth Date">Birth Date:</label><br>
+        <input type="date" id="quantity" name="quantity" style=" width:45%; height: 20px; padding: 2px ">
+        <label for="gender"> Gender</label>
+        <Select id=Gender name="gender" style="padding: 2px">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            </Select><br>
+            <label for="Address"> Address</label><br>
+            <input type="text" id="Address" name="Address" placeholder="Address Line-1" style=" width:80%; height: 20px; padding: 2px;" ><br>
+            <input type="text" id="Address" name="Address" placeholder="Address Line-2" style=" width:80%; height: 20px; padding: 2px;" ><br>
+            <label for="city"> city</label><br>
+            <input type="text" id="city" name="city" placeholder="City" style="width:48%; height: 20px;" >
+            <Select id=state name="State" style="width:48%; height: 25px;">
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh </option>
+                </Select><br>
+                <label for="Pin Code"> Pin Code</label><br>
+                <input type="number" id="Pin Code" name="Pin Code" placeholder="Pin Code" style=" width:48%; height: 20px; padding: 2px" ><br>
+                
+                <label for="Email"> Email</label><br>
+            <input type="text" id="Email" name="Email" placeholder="Email" style=" width:48%; height: 20px; padding: 2px;" ><br>
+            <label for="Phone">Phone:</label><br>
+            <input type="number" id="Phone" name="Phone" placeholder="Guardian Number" style=" width:48%; height: 20px; padding: 2px">
+            <input type="number" id="Phone" name="Phone" placeholder="Student Number" style=" width:48%; height: 20px; padding: 2px" ><br>
+            <label for="Course"> Course:</label><br>
+            <Select id=Course name="Course" style="width:48%; height: 25px;">
+                <option value="Graduation">Graduation</option>
+                <option value="BTech">BTech</option>
+                <option value="PostGraduation">PostGraduation</option>
+                </Select><br>
+                <label for="Comment">comment</label><br>
+                <input type="text" id="comment" name="comment" placeholder="comment" style=" width:48%; height: 20px; padding: 2px" ><br><hr>
+                <input type="submit" value="Submit"style=" width:24%; height: 30px; padding: 5px">
+<input type="reset" value="Reset" style=" width:24%; height: 30px; padding: 5px">
+            </form>
+    
+</body>
+</html>
